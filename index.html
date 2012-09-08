@@ -1,0 +1,91 @@
+<!DOCKTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link  rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript" src="js/validate.js"></script>
+	<title>validate form</title>
+</head>
+<body>
+	<section class="main">
+		<center><div id="msg">PLEASE SUBMIT YOUR FORM</div></center>
+		<form name=f1 onsubmit="return validateForm()">
+			
+				<fieldset>
+					<legend>Account Information</legend>
+						<strong>Username</strong><b>*</b><input type="text" id="uname" value="" placeholder="username" onblur="validateForm()" name="uname" /><div id="w_name"></div><br />
+						
+						<strong>Password</strong><b>*</b><input type="password" id="upass" value="" placeholder="Password" onblur="validateForm()" name="upass" /><div id="w_pass"></div><br />
+						
+				</fieldset>
+				<fieldset>
+					<legend>Profile Information</legend>
+						<strong>First Name</strong><b>*</b><input id="fname" type="text" value="" onblur="validateForm()" placeholder="First Name" name="first_name"/><div id="w_fname"></div><br />
+						<strong>Last Name</strong><b>*</b><input id="lname" type="text" value="" onblur="validateForm()" placeholder="Last Name"name="last_name"/><div id="w_lname"></div><br />
+						<strong>Profile Pic</strong><b>*</b><input type="file" id="fileToUpload" onblur="validateForm()"/><div id="w_file"></div>
+								<div id="fileName">
+								</div>
+								<div id="fileSize">
+								</div>
+								<div id="fileType">
+								</div><br />
+						<p>Gender<b>*</b></p>
+						Male<input id="male" type="radio" name="r1" onblur="validateForm()" value="male" checked>
+						Female<input type="radio" id="female" name="r1" onblur="validateForm()" value="female"><br /><br />
+						<strong>Date of Birth</strong><b>*</b><select name=date onblur="validateForm()" id="day">
+							<option value="day" selected>day</option>
+							<option value="1" >1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+										</select>
+										<select name=month onblur="validateForm()">
+							<option value="month" selected>month</option>
+							<option value="jan" >jan</option>
+							<option value="feb">feb</option>
+							<option value="mar">mar</option>
+							<option value="apr">apr</option>
+							<option value="may">may</option>
+										</select>
+										<select name=year onblur="validateForm()">
+							<option value="year" selected>year</option>
+							<option value="2001" >2001</option>
+							<option value="2002">2002</option>
+							<option value="2003">2003</option>
+							<option value="2004">2004</option>
+							<option value="2005">2005</option>
+										</select><div id="w_dob"></div><br /><br />
+						<p>Hobbies<b>*</b></p>
+						<ul>
+							<li>Painting<input type="radio" name=r2   value="Painting"/></li>
+							<li>Singing<input type="radio" name=r2  value="Singing"/></li>
+							<li>Traveling<input type="radio" name=r2   value="Traveling"/></li>
+							<li>Dancing<input type="radio" name=r2  value="Dancing"/></li>
+							<li>Gardening<input type="radio" name=r2  value="Gardening"/></li>
+							<li>Others<input type="radio" name=r2  value="Others"/></li>
+						</ul><div id="w_r"></div>
+							<br/><br />
+						
+							<strong>Have been to</strong><b>*</b><select id="cuntry" multiple="multiple" name=cuntry onblur="validateForm()">
+							<option value="cuntry" selected>country</option>
+							<option value="india" >india</option>
+							<option value="china">china</option>
+							<option value="africa">africa</option>
+							<option value="australia">australia</option>
+							<option value="bangla">bangla</option>
+										</select><div id="w_cuntry"></div><br />
+				</fieldset>
+				<fieldset class="last">
+					<legend>Contact Information</legend>
+						<strong>Phone</strong> <b>*</b><input id="phone"type="text" value="" placeholder="phone number" onblur="validateForm()" name=phone/><div id="w_phone"></div><br />
+						
+						
+				</fieldset>
+				<input id="submit" type="submit" onblur="validateForm()" value="submit"/>
+		</form>
+		<div class="block"><progress value="0" max="100" id="pro">
+			</progress><div id="w_prog"></div></div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,133 @@
+body{
+	 background: none repeat scroll 0 0 #F7F7F7;
+    color: #4D5255;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+	}
+*{
+	margin:0px;
+	padding:0px;
+	}
+.main{
+	background: none repeat scroll 0 0 #FFFFFF;
+	width:700px;
+	margin:30px auto;
+	padding:40px 10px;
+	oerflow:hidden;
+	box-shadow:-2px 8px 4px 2px #747474;
+	border-radius:5px;
+	}
+legend{
+	font-size: 16px;
+	}
+fieldset{
+	border-top:1px solid #F1F1F1;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	
+	margin:auto;
+	padding:20px;
+	margin-bottom:40px
+	}
+b{
+	color:red;
+	}
+p{
+font-size: 14px;
+color:black;
+margin-top:5px;
+}
+input{
+	margin:5px 0px;
+	border:1px solid #979B9E;
+	height:25px;
+	}
+#submit{
+	float:right;
+	padding:10px;
+	height:40px;
+	}
+#fname{
+	margin-left:5px;
+	background:url('../images/user.png') no-repeat 0px 50%;
+	padding-left:18px;
+	}
+#lname{
+	margin-left:5px;
+	background:url('../images/user.png') no-repeat 0px 50%;
+	padding-left:18px;
+}
+#fileToUpload{
+	margin-left:8px;
+}
+#uname{
+	background:url('../images/u.png') no-repeat 0px 50%;
+	margin-left:5px;
+	padding-left:18px;
+}
+#upass{
+	margin-left:7px;
+	background:url('../images/log.png') no-repeat 0px 50%;
+	padding-left:18px;
+}
+#male{
+	margin-right:10px;
+	}
+ul{
+	list-style:none;
+	}
+li{
+	margin-left:10px;
+	float:left;
+	}
+#phone{
+	margin-left:20px;
+	background:url('../images/p.png') no-repeat 0px 60%;
+	padding-left:18px;
+	}
+#w_name,#w_fname,#w_lname,#w_dob,#w_r,#w_cuntry,#w_phone,#w_pass,#w_file{
+	float:right;
+	margin-top:10px;
+	padding-left:20px;
+	color:red;
+	dislay:block;
+	
+	background:url('../images/war1.png') no-repeat 0px 60%;
+	}
+	#w_prog{
+
+	float:right;
+	padding-left:20px;
+	color:red;
+	dislay:block;
+	
+	
+	}
+#fileName,#fileSize,#fileType{
+visibility:visible;
+}
+#cuntry{
+	margin-left: 10px;
+	margin-bottom:-60px;
+	}
+progress{
+
+width:200px;
+
+}
+.block{
+	margin-bottom: 20px;
+	margin-left:200px;
+	width:300px;
+	display:block;
+	}
+.last{
+	margin-top:100px;
+	}
+#msg{
+	font-size:30px;
+	color:#DD4F53;
+	margin:0px auto 40px;
+	}
